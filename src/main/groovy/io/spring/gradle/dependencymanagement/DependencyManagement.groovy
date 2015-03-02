@@ -61,6 +61,9 @@ class DependencyManagement {
     def DependencyManagement(Project project, Configuration targetConfiguration) {
         this.project = project
         this.configuration = this.project.configurations.detachedConfiguration()
+        this.configuration.resolutionStrategy {
+            cacheChangingModulesFor 0, 'seconds'
+        }
         this.targetConfiguration = targetConfiguration
     }
 

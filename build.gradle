@@ -10,7 +10,7 @@ repositories {
     mavenCentral()
 }
 
-group = 'io.spring.gradle'
+group = 'com.github.jolivares'
 description = 'Dependency Management Plugin'
 
 ext {
